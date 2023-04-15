@@ -10,13 +10,5 @@ export default function App({ Component, pageProps }: AppProps) {
     ).matches;
     setDarkMode(isDarkMode);
   }, []);
-  return (
-    <div
-      className={`bg-${darkMode ? "gray-900" : "white"} text-${
-        darkMode ? "white" : "gray-900"
-      }`}
-    >
-      <Component {...pageProps} />
-    </div>
-  );
+  return <Component {...pageProps} />;
 }
