@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import Procard from "./Procard";
 import Mid from "./Mid";
+import ProfileBar from "./ProfileBar";
 
 const routes = [
   {
@@ -39,6 +40,9 @@ const Main = () => {
       </div>
       <div>
         <Mid />
+      </div>
+      <div>
+        <ProfileBar />
       </div>
     </div>
   );
