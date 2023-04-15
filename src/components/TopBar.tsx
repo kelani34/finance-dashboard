@@ -3,9 +3,9 @@ import React from "react";
 
 const TopBar = () => {
   return (
-    <div className="flex gap-6">
+    <div className="flex gap-6 w-full">
       <input
-        className="bg-[#272D35] px-8 py-7 rounded-2xl pl-[70px]"
+        className="bg-[#272D35] px-8 py-7 rounded-2xl pl-[70px] flex-1"
         placeholder="Tap here to search"
         style={{
           backgroundImage: "url(/search.svg)",

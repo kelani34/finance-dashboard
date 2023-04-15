@@ -32,8 +32,8 @@ const routes = [
 ];
 const Main = () => {
   return (
-    <div className=" p-8 flex">
-      <div>
+    <div className=" p-8 flex gap-6">
+      <div className="flex flex-col  gap-6">
         <Sidebar routes={routes} />
         <Procard />
       </div>
