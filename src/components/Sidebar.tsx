@@ -69,7 +69,7 @@ const Sidebar = ({ routes }: Props) => {
             />
             <span
               className={`${
-                isLightMode ? "text-white" : "text-[#C4C4C4]"
+                isLightMode ? "text-white" : "text-[#C4C4C4] hover:text-white"
               } font-medium text-sm`}
             >
               {isLightMode ? "Light mode" : "Dark mode"}
@@ -77,13 +77,13 @@ const Sidebar = ({ routes }: Props) => {
           </div>
         </div>
 
-        <Link href={"/settings"} className=" flex  my-6">
+        <Link href={"/settings"} className=" flex  my-6 style-link">
           <div
             className={`style-bg-gradient rounded-r-3xl w-2 h-8 bg-gradient-radial  ${
               "settings" === pathname ? "bg-gradient-radial" : "bg-none"
             }`}
           />
-          <div className="flex items-center w-full gap-6 opacity-50 px-7">
+          <div className="flex items-center w-full gap-6 opacity-50 hover:opacity-100 px-7">
             <Image
               src={"/settings.svg"}
               className=" "

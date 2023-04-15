@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from "./Sidebar";
+import Procard from "./Procard";
 
 const routes = [
   {
@@ -32,6 +33,7 @@ const Main = () => {
   return (
     <div className=" p-8">
       <Sidebar routes={routes} />
+      <Procard />
     </div>
   );
 };
