@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "./Sidebar";
 import Procard from "./Procard";
+import Mid from "./Mid";
 
 const routes = [
   {
@@ -31,12 +32,14 @@ const routes = [
 ];
 const Main = () => {
   return (
-    <div className=" p-8">
+    <div className=" p-8 flex">
       <div>
         <Sidebar routes={routes} />
         <Procard />
       </div>
-      <div></div>
+      <div>
+        <Mid />
+      </div>
     </div>
   );
 };
