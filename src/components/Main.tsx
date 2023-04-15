@@ -38,7 +38,7 @@ const Main = () => {
         <Sidebar routes={routes} />
         <Procard />
       </div>
-      <div>
+      <div className="flex-1">
         <Mid />
       </div>
       <div>
