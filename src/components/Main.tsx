@@ -32,8 +32,11 @@ const routes = [
 const Main = () => {
   return (
     <div className=" p-8">
-      <Sidebar routes={routes} />
-      <Procard />
+      <div>
+        <Sidebar routes={routes} />
+        <Procard />
+      </div>
+      <div></div>
     </div>
   );
 };
