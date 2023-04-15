@@ -1,15 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import FeatBox from "./FeatBox";
+import Users from "./Users";
+import UserImage from "./UserImage";
 
 const ProfileBar = () => {
   return (
     <div className="bg-[#272D35] rounded-2xl p-8 flex flex-col items-center">
       <div className="flex justify-center my-1">
-        <div className="p-2 border border-[#B983FF] rounded-full relative">
-          <Image src={"/user.png"} alt="user" width={80} height={80} />
-          <div className="p-2 bg-[#04C000] rounded-full absolute right-3 bottom-3" />
-        </div>
+        <UserImage img={"/user.png"} online={true} height={80} width={80} />
       </div>
       <div className="flex flex-col my-1 mb-6 ">
         <h3 className="text-white text-center mb-1">Emmy Dansom</h3>
@@ -28,6 +27,11 @@ const ProfileBar = () => {
           Organized activities to make money and sell goods and services for a
           profit
         </p>
+      </div>
+      <div className="w-full flex gap-6 flex-col">
+        <Users />
+        <Users />
+        <Users />
       </div>
     </div>
   );

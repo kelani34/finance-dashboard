@@ -3,6 +3,7 @@ import Sidebar from "./Sidebar";
 import Procard from "./Procard";
 import Mid from "./Mid";
 import ProfileBar from "./ProfileBar";
+import WalletCard from "./WalletCard";
 
 const routes = [
   {
@@ -41,8 +42,9 @@ const Main = () => {
       <div className="flex-1">
         <Mid />
       </div>
-      <div>
+      <div className="flex flex-col gap-6">
         <ProfileBar />
+        <WalletCard />
       </div>
     </div>
   );
